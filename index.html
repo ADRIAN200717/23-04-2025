@@ -9,13 +9,16 @@
     
     <div id="resultado"></div>
     <script>
-        function sumar(valor1,valor2)
+        function sumar()
         {
+          valor1 = parseInt(prompt("Vamos a sumar 2 números. Ingrese el número uno:"));
+          valor2 = parseInt(prompt("Ingrese el numero dos: "));
+          
             var resultado=valor1+valor2;
             document.getElementById("resultado").innerHTML="La función obtiene la siguiente suma: "+resultado;
         }
 
-        sumar(50,200);
+        sumar();
     </script>
 </body>
 </html>
