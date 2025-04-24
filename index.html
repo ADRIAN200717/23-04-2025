@@ -1,28 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <div id="resultadoImpar"></div>
-      <div id="resultadoPar"></div>
-      <div id="resultado"></div>
-  
+    
+    <div id="resultado"></div>
     <script>
-      var valores=[1,2,3,4,5,6,7,8,9,10];
-      var resultadoImpar=valores[0]+valores[2]+valores[4]+valores[6]+valores[8];
-     
-      document.getElementById('resultadoImpar').innerHTML="Resultado: "+resultadoImpar;
+        function sumar(valor1,valor2)
+        {
+            var resultado=valor1+valor2;
+            document.getElementById("resultado").innerHTML="La función obtiene la siguiente suma: "
+        }
 
-      var resultadoPar=valores[1]+valores[3]+valores[5]+valores[7]+valores[9];
-      document.getElementById('resultadoPar').innerHTML="Resultado: "+resultadoPar;
-      
-      var resultado=valores[4]+valores[9];
-      document.getElementById('resultado').innerHTML="Resultado: "+resultado
+        sumar(50,200);
     </script>
-   
-
 </body>
 </html>
