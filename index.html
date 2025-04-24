@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    
-    <div id="resultado"></div>
-    <script>
-        function sumar()
-        {
-          valor1 = parseInt(prompt("Vamos a sumar 2 números. Ingrese el número uno:"));
-          valor2 = parseInt(prompt("Ingrese el numero dos: "));
-          
-            var resultado=valor1+valor2;
-            document.getElementById("resultado").innerHTML="La función obtiene la siguiente suma: "+resultado;
-        }
-
-        sumar();
-    </script>
+  <div id="resultado"></div>
+  <script>
+    function sumar(valor1,valor2)
+    {
+      var resultado=valor1+valor2;
+      return resultado
+    }
+    document.getElementById("resultado").innerHTML="Resultado de la suma es: "+sumar(30+50)
+  </script>
 </body>
 </html>
